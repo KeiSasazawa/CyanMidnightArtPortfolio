@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Thin Italic';
+    src: url(Roboto-ThinItalic.ttf);
+}
+body {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+.header {
+    display: flex;
+    background-color: #1f2937;
+    padding: 10px;
+    gap: 50px;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+a , .paragraph {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.hero {
+    padding: 30px;
+    display: flex;
+    background-color: #1f2937;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.heroMain, .call {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+button {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    margin: 10px;
+}
+
+.second {
+    padding: 30px;
+}
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info img {
+    border: solid 5px #3882F6;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.quotebox {
+    background-color: #E5E7EB;
+    padding: 50px;
+}
+.quote { 
+    font-family: 'Roboto Thin Italic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.thor {
+    text-align: right;
+}
+
+.fourth {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    background-color: #3882F6;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.call {
+    font-size: 20px;
+    flex: 1;
+}
+
+#button2 {
+    border: solid #F9FAF8 1px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #1f2937;
+    color: #E5E7EB;
+}
+
