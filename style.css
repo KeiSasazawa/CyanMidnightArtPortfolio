@@ -9,6 +9,11 @@
 }
 body {
     font-family: 'Roboto', 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+    font-size: 20px;
 }
 
 .header {
@@ -21,9 +26,10 @@ body {
     
 }
 
-.logo {
+.logo a {
     font-size: 24px;
     color: #F9FAF8;
+    flex:1; 
     
 }
 
@@ -32,36 +38,52 @@ body {
     gap: 30px;
 }
 
-a , .paragraph {
+a {
     text-decoration: none;
+    color: inherit;
+    
+}
+
+.rightLinks, .paragraph {
     color: #E5E7EB;
     font-size: 18px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
+
 
 .hero {
     padding: 30px;
     display: flex;
     background-color: #1f2937;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
 }
 
-.heroMain, .call {
+.heroMain, .call, h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-button {
+a.button {
     padding: 5px 10px;
     border: 0;
     border-radius: 4px;
     background-color: #3882F6;
     color: #F9FAF8;
+    font-size: 20px;
     margin: 10px;
 }
 
+h2 {
+    color:#1F2937;
+    font-size: 30px;
+    font-weight: 900;
+}
 .second {
     padding: 30px;
 }
@@ -69,23 +91,30 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
 }
 
-.gallery {
+.showcase {
+    background-color: #cae0e6;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 100px;
+    margin: 10px;
+   
 }
 
-.info img {
+img {
     border: solid 5px #3882F6;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    max-width: 300px;
+    height: auto;
 }
 
 .quotebox {
@@ -96,10 +125,6 @@ button {
     font-family: 'Roboto Thin Italic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 36px;
     color: #1F2937;
-}
-
-.thor {
-    text-align: right;
 }
 
 .fourth {
@@ -130,10 +155,19 @@ button {
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 30px;
+
+    background-color: #1f2937;
+    color: #E5E7EB;
     background-color: #1f2937;
     color: #E5E7EB;
 }
 
+#vgen {
+    font-size: 30px;
+    border: solid 5px #ffff;
+    padding: 10px;
+    border-radius: 20px;
+}
