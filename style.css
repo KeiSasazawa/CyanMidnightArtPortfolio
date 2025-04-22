@@ -18,12 +18,21 @@ body {
 
 .header {
     display: flex;
-    background-color: #1f2937;
+    background-color: #a84aa4;
     padding: 10px;
     gap: 50px;
     justify-content:space-around;
     align-items: center;
     
+}
+
+.hero {
+    padding: 30px;
+    display: flex;
+    background-color: #c36dcf;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo a {
@@ -54,14 +63,6 @@ a {
 }
 
 
-.hero {
-    padding: 30px;
-    display: flex;
-    background-color: #1f2937;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-}
 
 .heroMain, .call, h1 {
     font-size: 48px;
@@ -73,7 +74,7 @@ a.button {
     padding: 5px 10px;
     border: 0;
     border-radius: 4px;
-    background-color: #3882F6;
+    background-color: #ff00b3;
     color: #F9FAF8;
     font-size: 20px;
     margin: 10px;
@@ -86,6 +87,8 @@ h2 {
 }
 .second {
     padding: 30px;
+    background-color: #fcccf3;
+    
 }
 .random {
     display: flex;
@@ -98,7 +101,7 @@ h2 {
 }
 
 .showcase {
-    background-color: #cae0e6;
+    background-color: #e1d4fa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +121,7 @@ img {
 }
 
 .quotebox {
-    background-color: #E5E7EB;
+    background-color: #fcccf3;
     padding: 50px;
 }
 .quote { 
@@ -132,9 +135,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fcccf3
 }
 .modal {
-    background-color: #3882F6;
+    background-color: #ff00b3;
     padding: 30px;
     flex: 1;
     display: flex;
@@ -159,15 +163,12 @@ img {
     align-items: center;
     padding: 30px;
 
-    background-color: #1f2937;
-    color: #E5E7EB;
-    background-color: #1f2937;
+    background-color: #a84aa4;
     color: #E5E7EB;
 }
 
 #vgen {
     font-size: 30px;
-    border: solid 5px #ffff;
     padding: 10px;
-    border-radius: 20px;
+
 }
