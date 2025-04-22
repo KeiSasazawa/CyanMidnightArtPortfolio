@@ -20,7 +20,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     padding: 10px;
     background-color: #a84aa4;
     
@@ -193,7 +193,7 @@ img {
     color: #E5E7EB;
 }
 
-#vgen {
+.vgen {
     font-size: 30px;
     padding: 10px;
 

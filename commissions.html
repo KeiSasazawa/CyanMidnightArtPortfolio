@@ -8,6 +8,62 @@
 </head>
 <body>
 
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const langs = document.querySelector('.langWrap');
+            const link = document.querySelectorAll('.langWrap a');
+            const home = document.querySelector('.home');
+            const gallery = document.querySelector('.gallery');
+            const commission = document.querySelector('.commission');
+            const commissionTitle = document.querySelector('.commissionTitle');
+            const commissionCommand = document.querySelector('.commissionCommand');
+            const request = document.querySelector('.request');
+    
+            const data = {
+                english: {
+                    home: "Home",
+                    gallery: "Gallery",
+                    commission: "Commission",
+                    commissionTitle: "Commission",
+                    commissionCommand: "Feel free to commission me through these!",
+                    request: "For email please make the subject, Commission order: inquiry/fullbody/portrait/etc."
+                },
+
+                japanese: {
+                    home: "ホーム",
+                    gallery: "ギャラリー",
+                    commission: "作品の依頼",
+                    commissionTitle: "作品の依頼",
+                    galleryHead: "ギャラリー",
+                    commissionCommand: "以下の方法で作品依頼ができます!",
+                    request: "メールでリクエストしたい場合はけんめいを下記の例のように沿って、件名をご入力してください。作品の依頼: 全体, 作品の依頼: 肖像画 "
+                
+                }
+            };
+    
+            link.forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+    
+                    langs.querySelector('.active').classList.remove('active');
+                    el.classList.add('active');
+    
+                    const attr = el.getAttribute("language");
+    
+                    home.textContent = data[attr].home;
+                    gallery.textContent = data[attr].gallery;
+                    commission.textContent = data[attr].commission;
+                    commissionTitle.textContent = data[attr].commissionTitle;
+                    commissionCommand.textContent = data[attr].commissionCommand;
+                    request.textContent = data[attr].request;
+                });
+            });
+        });
+    
+    
+        </script>
+
         <div class="container">
             <div class= "langWrap">
                 <a href="#" language="english" class="active">EN</a>
@@ -28,19 +84,19 @@
     </div>
 
     <div class="hero">
-        <h1>Commissions</h1>
+        <h1 class="commissionTitle">Commissions</h1>
 </div>
         <div class="showcase">
             <div>
-                <h2>Feel free to commission me through these!</h2>
+                <h2 class="commissionCommand">Feel free to commission me through these!</h2>
             
-                    <p><u><a id= vgen href="https://vgen.co/CyanMidnightArt" target="_blank" rel="noopener noreferrer"> My Vgen Link! </a></u></p>
+                    <p><u><a class= "vgen" href="https://vgen.co/CyanMidnightArt" target="_blank" rel="noopener noreferrer"> My Vgen Link! </a></u></p>
                     <p>-----------------------------------------</p>
                     <p>OR</p>
                     <p>-----------------------------------------</p>
                     <p><u>Email: cyanicmidnight@gmail.com</u></p>
                 
-            <p>For email please make the subject "Commission order: inquiry/fullbody/portrait/etc." </p>
+            <p class="request">For email please make the subject "Commission order: inquiry/fullbody/portrait/etc." </p>
             </div>
         </div>
 

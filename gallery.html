@@ -13,7 +13,54 @@
                 <a href="#" language="japanese">JP</a>
             </div>
         </div>
-        <script src="script.js"></script>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const langs = document.querySelector('.langWrap');
+        const link = document.querySelectorAll('.langWrap a');
+        const home = document.querySelector('.home');
+        const gallery = document.querySelector('.gallery');
+        const commission = document.querySelector('.commission');
+        const galleryHead = document.querySelector('.galleryHead');
+
+        const data = {
+            english: {
+                home: "Home",
+                gallery: "Gallery",
+                commission: "Commission",
+                galleryHead: "Gallery"
+            },
+            japanese: {
+                home: "ホーム",
+                gallery: "ギャラリー",
+                commission: "作品の依頼",
+                galleryHead: "ギャラリー",
+                
+            }
+        };
+
+        link.forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                langs.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+
+                const attr = el.getAttribute("language");
+
+                home.textContent = data[attr].home;
+                gallery.textContent = data[attr].gallery;
+                commission.textContent = data[attr].commission;
+                galleryHead.textContent = data[attr].galleryHead;
+            });
+        });
+    });
+
+
+    </script>
+
+        <!-- language end -->
 
     <div class="header">
         <div class="logo">
@@ -29,7 +76,7 @@
     </div>
 
     <div class="hero">
-        <h1>Gallery</h1>
+        <h1 class="galleryHead">Gallery</h1>
     </div>
 
     <div class="showcase">
